@@ -11,6 +11,8 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-VOLUME ["/data", "/"]
+RUN apt-get upgrade
+RUN apt-get update
+RUN apt-get install vim
 
 CMD ["/bin/bash"] 
