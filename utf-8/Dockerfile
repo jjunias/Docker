@@ -14,4 +14,6 @@ ENV LC_ALL en_US.UTF-8
 RUN apt-get update && \
     apt-get install -y vim
 
+VOLUME ["/ROOT"]
+
 CMD ["/bin/bash"] 
