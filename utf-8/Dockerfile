@@ -16,8 +16,10 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
 RUN apt-get update && \
-    apt-get install -y vim
+    apt-get install -y vim && \
+    chmod 777 /usr
 
-VOLUME ["/ROOT"]
+
+VOLUME /usr
 
 CMD ["/bin/bash"] 
